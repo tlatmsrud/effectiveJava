@@ -26,5 +26,9 @@ public class Student {
     public static Student createOfAdmissionYear(String name, int year) {
         return new Student(name, year);
     }
+
+    public void hi(){
+        System.out.println("hi");
+    }
 }
 
