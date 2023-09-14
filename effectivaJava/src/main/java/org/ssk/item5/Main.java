@@ -14,6 +14,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        SpellChecker spellChecker = new SpellChecker(() -> new KoreaDictionary());
+
+        Supplier<Dictionary> supplier = () -> new KoreaDictionary();
+        supplier.get(); // KoreaDictionary 생성하는거. >> 팩터리
+
+
+        SpellChecker spellChecker = new SpellChecker(supplier);
     }
 }
