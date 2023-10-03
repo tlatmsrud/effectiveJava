@@ -1,4 +1,5 @@
-package org.ssk.item19.usecase1;
+package org.ssk.item19.usecase3;
+
 
 /**
  * title        :
@@ -18,12 +19,13 @@ public class OverrideAdd extends MyAdd {
 class Main{
 
     public static void main(String[] args) {
-        MyAdd overrideAdd = new OverrideAdd();
 
-        int result = overrideAdd.add(2,2);
+        MyAdd myAdd = MyAdd.newInstance();
+
+        int result = myAdd.add(2,2);
         System.out.println(result);
 
-        int result2 = overrideAdd.addAll(2,2,3,3);
+        int result2 = myAdd.addAll(2,2,3,3);
         System.out.println(result2);
     }
 }

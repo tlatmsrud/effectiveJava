@@ -1,8 +1,15 @@
-package org.ssk.item19.usecase1;
+package org.ssk.item19.usecase3;
 
 
 public class MyAdd {
 
+    private MyAdd(){
+
+    }
+
+    public static MyAdd newInstance(){
+        return new MyAdd();
+    }
     /**
      * 두 인자를 더합니다.
      * @param a 첫번째 인자
