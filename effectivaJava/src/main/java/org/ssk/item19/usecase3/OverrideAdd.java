@@ -7,9 +7,9 @@ package org.ssk.item19.usecase3;
  * date         : 2023-10-02
  * description  :
  */
-public class OverrideAdd extends MyAdd {
+public class OverrideAdd /*extends MyAdd */{
 
-    @Override
+    /*@Override*/
     public int add(int a, int b) {
         System.out.println("묻고 떠블로 가");
         return (a+b)*2;
