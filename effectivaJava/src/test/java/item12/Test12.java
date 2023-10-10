@@ -18,5 +18,6 @@ public class Test12 {
         Human human2 = new Human("홍길동", 34, 203, 80);
 
         assertThat(human1).isEqualTo(human2);
+
     }
 }
