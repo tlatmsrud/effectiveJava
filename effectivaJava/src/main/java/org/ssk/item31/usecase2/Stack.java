@@ -1,7 +1,5 @@
 package org.ssk.item31.usecase2;
 
-import org.ssk.item20.usecase1.A;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +17,10 @@ public class Stack<E> {
         size += anotherList.size();
     }
 
-    public List<E> flush(List<E> anotherList){
+    public void flush(List<E> anotherList){
         while(!isEmpty()){
             anotherList.add(pop());
         }
-        return anotherList;
     }
 
     private E pop(){

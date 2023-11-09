@@ -17,7 +17,7 @@ public class Favorites {
     }
 
     public <T> T getFavorite(Class<T> type){
-        return (T)favorites.get(type);
+        return type.cast(favorites.get(type));
     }
 
     public static void main(String[] args) {
