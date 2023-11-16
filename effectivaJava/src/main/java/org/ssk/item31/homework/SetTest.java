@@ -31,5 +31,8 @@ public class SetTest {
 
         ArrayList<Integer> a = new ArrayList<>();
 
+        List<String> linkedList = new LinkedList<>();
+
+        linkedList.add("hi");
     }
 }
