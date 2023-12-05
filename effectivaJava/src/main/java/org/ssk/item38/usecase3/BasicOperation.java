@@ -1,4 +1,4 @@
-package org.ssk.item38.usecase1;
+package org.ssk.item38.usecase3;
 
 /**
  * title        :
@@ -6,7 +6,8 @@ package org.ssk.item38.usecase1;
  * date         : 2023-12-05
  * description  :
  */
-public enum BasicOperation implements Operation{
+public enum BasicOperation {
+
     PLUS("+"){
         @Override
         public double apply(double x, double y) {
@@ -34,12 +35,20 @@ public enum BasicOperation implements Operation{
 
     private final String symbol;
 
+
     BasicOperation(String symbol){
         this.symbol = symbol;
     }
+/*    public double apply(double x, double y){
+        switch (this){
+            case PLUS : return x+y;
+            case MINUS : return x-y;
+            case TIMES : return x*y;
+            case DIVIDE: return x/y;
+        }
 
-    @Override
-    public String toString() {
-        return symbol;
-    }
+        throw new AssertionError("알 수 없는 연산 : "+this);
+    }*/
+
+    abstract double apply(double x, double y);
 }
