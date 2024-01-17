@@ -11,6 +11,6 @@ import org.ssk.item20.usecase1.B;
 public class Main {
     public static void main(String[] args) {
         AClass aClass = new BClass();
-        BClass bClass = new AClass();
+        //BClass bClass = new AClass();
     }
 }
