@@ -19,7 +19,6 @@ public class SetTest {
         set.add("5");
         set.add("1");
 
-
         Iterator<String> iterator = set.iterator();
 
         while(iterator.hasNext()){
