@@ -29,7 +29,7 @@ public class MutablePeriod {
             // 역직렬화 과정에서 Period 객체의 Date 참조를 훔친다.
             ObjectInputStream in = new ObjectInputStream(new ByteArrayInputStream(bos.toByteArray()));
             period = (Period) in.readObject();
-            start = (Date) in.readObject();
+            start = (Date) in.readObject(); //
             end = (Date) in.readObject();
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
