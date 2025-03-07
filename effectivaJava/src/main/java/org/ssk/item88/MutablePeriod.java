@@ -23,7 +23,7 @@ public class MutablePeriod {
              */
             byte[] ref = { 0x71, 0, 0x7e, 0, 5 }; // 악의적인 참조
             bos.write(ref); // 시작 필드
-            ref[4] = 4; // 악의적인 참조
+            ref[4] = 4; // 악의적인 참조 2
             bos.write(ref); // 종료 필드
 
             // 역직렬화 과정에서 Period 객체의 Date 참조를 훔친다.
